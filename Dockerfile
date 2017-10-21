@@ -8,7 +8,7 @@ RUN apk upgrade --no-cache
 RUN apk add --no-cache \
     libwebp icu-libs \
     php7 php7-apcu php7-ctype php7-curl php7-dom php7-fpm php7-gd php7-gd php7-iconv php7-intl php7-json \
-    php7-mbstring php7-mcrypt php7-mysqlnd php7-openssl php7-pgsql \
+    php7-mbstring php7-mcrypt php7-mysqli php7-mysqlnd php7-openssl php7-pgsql \
     php7-phar php7-session php7-sqlite3 php7-xml php7-xmlreader \
     nginx supervisor
 
