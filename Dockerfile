@@ -1,18 +1,12 @@
-FROM alpine:3.4
+FROM alpine:3.6
 MAINTAINER Alexander Mueller <XelaRellum@web.de>
 
-RUN apk update --no-cache \
-    --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ \
-    --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/
+RUN apk update --no-cache
 
-RUN apk upgrade --no-cache \
-    --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ \
-    --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/
+RUN apk upgrade --no-cache
 
-RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ add \
-    libwebp icu-libs
-
-RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ add \
+RUN apk add --no-cache 
+    libwebp icu-libs \
     php7 php7-apcu php7-ctype php7-curl php7-dom php7-fpm php7-gd php7-gd php7-iconv php7-intl php7-json \
     php7-mbstring php7-mcrypt php7-mysqlnd php7-openssl php7-pgsql \
     php7-phar php7-session php7-sqlite3 php7-xml php7-xmlreader \
