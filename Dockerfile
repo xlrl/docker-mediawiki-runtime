@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.9
 MAINTAINER Alexander Mueller <XelaRellum@web.de>
 
 RUN apk update --no-cache
